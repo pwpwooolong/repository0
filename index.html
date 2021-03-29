@@ -6,19 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>低卡養生餐廳</title>
     <style>
-        p
-        {
-            color: rgb(142, 235, 139);
-            font-size: 30px;
-        }
         body
         {
             background-color: rgb(9, 80, 24);
         }
+        /*---- 頁首 ----*/
+        #HEADER {
+        background-color: #FFFFFF;
+        }
+        #HEADER h1 a {
+        text-indent: -9999px;
+        display: block;
+        width: 800px;
+        height: 200px;
+        }
+        /*---- 主選單 ----*/
+        #MAIN_NAV {
+        background-color: #000000;
+        overflow:auto;
+        width: 800px;
+        }
+        #MAIN_NAV ul {
+        list-style-type:none;
+        }
+        #MAIN_NAV li {
+        float: left;
+        }
+        #MAIN_NAV li a {
+        display: block;
+        padding: 5px 10px 5px 10px;
+        background-color: #000000;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: Arial;
+        font-size: 12px;
+        text-decoration: none;
+        border-right:1px solid #FFFFFF;
+        }
+        #MAIN_NAV li a:hover {
+        background-color: #FFFFFF;
+        color: #000000;
+        }
+        /*---- 內容區 ----*/
+        #CONTENT {
+        background-color: #FFFFFF;
+        clear: both;
+        }
+        #CONTENT h2, #CONTENT h4, #CONTENT p {
+        padding:6px 20px 6px 20px;
+        font-size:12px;
+        }
+        #CONTENT h2 {
+        font-family: Arial;
+        font-size: 24px;
+        text-align: center;
+        padding-top: 10px;
+        background-color:#666;
+        color:#FFF;
+        letter-spacing:10px;
+        border-top:2px #999 solid;
+        }
+        /*---- 頁尾 ----*/
+        #FOOTER {
+        background-color: #000000;
+        }
+        #FOOTER h2, #FOOTER p {
+        font-size: 12px;
+        padding:5px 20px;
+        font-family: Arial;
+        color: #FFFFFF;
+        }
+        .clearfloat {
+        clear:both;
+        height:0;
+        font-size: 1px;
+        line-height: 0px;
+        }
     </style>
 </head>
 <body>
-    <p>健康養生</p>
-    <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/"height="500" /><br/>
+<!--Header上橫幅 -->
+<div id="HEADER">
+.....
+</div> 
+<!--MAIN_NAV主選單 -->
+<div id="MAIN_NAV">
+.....
+</div> 
+<!--CONTENT內容區 -->
+<div id="CONTENT"> 
+    <h2 id="CONTENT">健康養生</h2>
+    <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/"height="500"alt="菜單" /><br/>
+
+
+
+</div>
+<!--FOOTER頁尾 -->
+<div id="FOOTER">
+......
+</div> 
+
+
+   
 </body>
 </html>
