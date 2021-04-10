@@ -18,7 +18,8 @@
       padding: 0;
       color: #333333;
       background-color: #F4CD83;
-}
+    }
+
     #WRAPPER {
       width: 800px;
       margin: 0 auto;
@@ -39,8 +40,7 @@
 
 
     /*---- 內容區 ----*/
-    #CONTENT {
-    }
+    #CONTENT {}
 
     #CONTENT img {
       width: auto;
@@ -49,7 +49,9 @@
       display: block;
     }
 
-    #CONTENT h2, #CONTENT h4, #CONTENT p {
+    #CONTENT h2,
+    #CONTENT h4,
+    #CONTENT p {
       padding: 6px 20px 6px 20px;
       font-size: 12px;
     }
@@ -65,21 +67,23 @@
       border-top: 2px #999 solid;
     }
 
-    .align-content-center  {
+    .align-content-center {
       margin: 0 10px 100px 10px;
     }
 
     /*---- 菜單 ----*/
-    section  {
+    section {
       background-color: #11A4A1;
     }
-    section > h1 {
+
+    section>h1 {
       color: white;
       text-shadow: 5px 5px 5px rgb(184, 218, 36);
       width: fit-content;
       border-radius: 5px;
       margin: 30px;
-          }
+    }
+
     .card h3 {
       margin: 10px 0px 0 20px;
       color: darkcyan;
@@ -131,16 +135,19 @@
       background-color: #000000;
       padding: 30px 0 60px 0;
     }
-    #FOOTER ul{
+
+    #FOOTER ul {
       text-align: center;
 
     }
+
     #FOOTER li {
       font-size: 12px;
       padding: 5px 20px;
       font-family: Arial;
       color: #FFFFFF;
     }
+
     #FOOTER ul li a {
       margin: 0 15px 0 0;
       color: #fff
@@ -157,6 +164,41 @@
     /*--------- carousel---------- */
     .carousel-item {
       height: 200px;
+    }
+
+    /*--餐點照片--*/
+    .pic1 {
+      background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/o33d07922a670f717d002703806ae4e8b-4620693218520375109-201027-0006-1603796253.jpg?crop=1xw:1xh;center,top&resize=480:*);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .pic2 {
+      background: url(https://angelala.tw/wp-content/uploads/2020/08/la4.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    .pic3 {
+      background: url(https://img.nellydyu.tw/uploads/20200324203618_45.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    .pic4 {
+      background: url(https://disk.sharelife.tw/gallery/54918-83302/6256200720372821.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom;
+    }
+
+    .pic5 {
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGvh4uKPBvb94f8HOU1PzneX9O_8bg7PTRw&usqp=CAU);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom;
     }
   </style>
 </head>
@@ -183,7 +225,7 @@
   <div id="WRAPPER">
 
     <!--Header上橫幅 圖片展示 -->
-  <div id="HEADER">
+    <div id="HEADER">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -229,19 +271,19 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-  </div>
+    </div>
     <!--CONTENT內容區 -->
-  <div id="CONTENT">
+    <div id="CONTENT">
       <h2 id="CONTENT">健康養生餐點</h2>
       <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" height="500"
         alt="菜單" /><br />
 
-      <section class="d-flex flex-column align-items-center" >
-        <h1 >
+      <section class="d-flex flex-column align-items-center">
+        <h1>
           低卡健康菜單
         </h1>
         <div class="card_grid d-flex flex-column flex-wrap justify-content-center align-content-center">
-          <div class="card">
+          <div class="card pic1">
             <h3>入口即化餐</h3>
             <div class="p_grid">
               <p class="words">
@@ -250,7 +292,7 @@
               <p class="money">$100</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card pic2">
             <h3>將酒霍肉餐</h3>
             <div class="p_grid">
               <p class="words">
@@ -259,7 +301,7 @@
               <p class="money">$90</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card pic3">
             <h3>巧奪天工餐</h3>
             <div class="p_grid">
               <p class="words">
@@ -268,7 +310,7 @@
               <p class="money">$90</p>
             </div>
           </div>
-          <div class="card">
+          <div class="card pic4">
             <h3>甘醇入味餐</h3>
             <div class="p_grid">
               <p class="words">
@@ -276,7 +318,7 @@
             </div>
             <p class="money">$100</p>
           </div>
-          <div class="card">
+          <div class="card pic5">
             <h3>膾炙人口餐</h3>
             <div class="p_grid">
               <p class="words">&emsp;膾，細切肉。炙，烤肉。膾炙皆為人所喜好膾，細切肉。炙，烤肉。膾炙皆為人所喜好</p>
@@ -286,10 +328,10 @@
         </div>
       </section>
 
-  </div>
+    </div>
     <!--FOOTER頁尾 -->
-  <div id="FOOTER">
-      
+    <div id="FOOTER">
+
       <!--聯絡方式-->
       <ul class="nav">
         <li class="nav-item">
@@ -300,16 +342,16 @@
         </li>
         <li class="nav-item">
           <a href="#" target="_blank">
-            <i class="fab fa-facebook-square"></i>  FACEBOOK</a>
+            <i class="fab fa-facebook-square"></i> FACEBOOK</a>
         </li>
       </ul>
       <ul class="nav">
         <li class="nav-item">連絡電話：04-1234567</li>
         <li class="nav-item">店家地址：台中市北屯區 安祥路八段光明街8787號</li>
       </ul>
-      
 
-  </div>
+
+    </div>
     <!--最外層包裝 結尾-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
