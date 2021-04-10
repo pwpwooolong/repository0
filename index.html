@@ -13,9 +13,12 @@
     crossorigin="anonymous" />
   <style>
     body {
-      background-color: #6b705c;
-    }
-
+      font-family: "Lato", "Noto Sans TC", sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333333;
+      background-color: #F4CD83;
+}
     #WRAPPER {
       width: 800px;
       margin: 0 auto;
@@ -37,8 +40,6 @@
 
     /*---- 內容區 ----*/
     #CONTENT {
-      background-color: #FFFFFF;
-      clear: both;
     }
 
     #CONTENT img {
@@ -49,9 +50,7 @@
       display: block;
     }
 
-    #CONTENT h2,
-    #CONTENT h4,
-    #CONTENT p {
+    #CONTENT h2,h4,p {
       padding: 6px 20px 6px 20px;
       font-size: 12px;
     }
@@ -72,8 +71,18 @@
     }
 
     /*---- 菜單 ----*/
+    section  {
+      background-color: #11A4A1;
+    }
+    section > h1 {
+      color: white;
+      text-shadow: 5px 5px 5px rgb(184, 218, 36);
+      width: fit-content;
+      border-radius: 5px;
+      margin: 30px;
+          }
     .card h3 {
-      margin: 0px;
+      margin: 10px 0px 0 20px;
       color: darkcyan;
       background-color: rgb(255, 255, 255);
       border-radius: 10px 10px 0px 0px;
@@ -83,7 +92,6 @@
     .card .p_grid {
       display: flex;
       justify-content: center;
-      align-items: center;
       height: 100%;
     }
 
@@ -116,7 +124,7 @@
       bottom: -1px;
       width: fit-content;
       background-color: rgb(211, 20, 20);
-      color: rgb(0, 0, 0);
+      color: #fff;
     }
 
     /*---- 頁尾 ----*/
@@ -229,14 +237,9 @@
       <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" height="500"
         alt="菜單" /><br />
 
-      <section class="d-flex flex-column align-items-center" style="
-      background: rgb(16, 207, 99)">
-        <h1 style="color: white;
-            background-color: rgb(184, 218, 36);
-            width: fit-content;
-            border-radius: 5px;
-            margin: 30px;">
-          低卡健康餐廳
+      <section class="d-flex flex-column align-items-center" >
+        <h1 >
+          低卡健康菜單
         </h1>
         <div class="card_grid d-flex flex-column flex-wrap justify-content-center align-content-center">
           <div class="card">
@@ -245,7 +248,7 @@
               <p class="words">
                 &emsp;牙，口不好菜要軟爛 都可以調整
               </p>
-              <p class="money" style="color: #fff;">$100</p>
+              <p class="money">$100</p>
             </div>
           </div>
           <div class="card">
@@ -254,7 +257,7 @@
               <p class="words">
                 &emsp;霍，豆葉。漿酒霍肉指把酒肉視為水漿豆葉般，
               </p>
-              <p class="money" style="color: #fff;">$90</p>
+              <p class="money">$90</p>
             </div>
           </div>
           <div class="card">
@@ -263,7 +266,7 @@
               <p class="words">
                 &emsp;巧，雖是人工製造，但是精巧勝過天然。
               </p>
-              <p class="money" style="color: #fff;">$90</p>
+              <p class="money">$90</p>
             </div>
           </div>
           <div class="card">
@@ -272,14 +275,14 @@
               <p class="words">
                 &emsp; 甘，很多人不遠千里，慕名而來</p>
             </div>
-            <p class="money" style="color: #fff;">$100</p>
+            <p class="money">$100</p>
           </div>
           <div class="card">
             <h3>膾炙人口餐</h3>
             <div class="p_grid">
               <p class="words">&emsp;膾，細切肉。炙，烤肉。膾炙皆為人所喜好膾，細切肉。炙，烤肉。膾炙皆為人所喜好</p>
             </div>
-            <p class="money" style="color: #fff;">$120</p>
+            <p class="money">$120</p>
           </div>
         </div>
       </section>
