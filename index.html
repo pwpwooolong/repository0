@@ -67,6 +67,10 @@
       border-top: 2px #999 solid;
     }
 
+    .align-content-center  {
+      margin: 0 10px 100px 10px;
+    }
+
     /*---- 菜單 ----*/
     .card h3 {
       margin: 0px;
@@ -118,22 +122,24 @@
     /*---- 頁尾 ----*/
     #FOOTER {
       background-color: #000000;
+      padding: 30px 0 60px 0;
     }
+    #FOOTER ul{
+      text-align: center;
 
-    #FOOTER h2,
-    #FOOTER p {
+    }
+    #FOOTER li {
       font-size: 12px;
       padding: 5px 20px;
       font-family: Arial;
       color: #FFFFFF;
     }
-
-    .clearfloat {
-      clear: both;
-      height: 0;
-      font-size: 1px;
-      line-height: 0px;
+    #FOOTER ul li a {
+      margin: 0 15px 0 0;
+      color: #fff
     }
+
+
 
 
     /*---- 佛郎基 ----*/
@@ -170,7 +176,7 @@
   <div id="WRAPPER">
 
     <!--Header上橫幅 圖片展示 -->
-    <div id="HEADER">
+  <div id="HEADER">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -216,16 +222,15 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-    </div>
+  </div>
     <!--CONTENT內容區 -->
-    <div id="CONTENT">
+  <div id="CONTENT">
       <h2 id="CONTENT">健康養生餐點</h2>
       <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" height="500"
         alt="菜單" /><br />
 
       <section class="d-flex flex-column align-items-center" style="
       background: rgb(16, 207, 99)">
-        <div class="menu"></div>
         <h1 style="color: white;
             background-color: rgb(184, 218, 36);
             width: fit-content;
@@ -279,22 +284,26 @@
         </div>
       </section>
 
-    </div>
+  </div>
     <!--FOOTER頁尾 -->
-    <div id="FOOTER">
+  <div id="FOOTER">
+      
       <!--聯絡方式-->
-      <p class="photo" style="font-size: 1cm;">連絡電話：xxxxxxxxxxx</p>
-      <p class="photo" style="font-size: 1cm;">店面地址：xx市xx區xx街xx號</p>
-      <span style="font-size: 3rem;">
-        <span style="color: Mediumslateblue;">
-          <i class="fab fa-bluetooth"></i>
-        </span>
-      </span>
-      <span style="font-size: 3em; color: rgb(30, 216, 139);">
-        <i class="fab fa-apple"></i>
-      </span>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="#" target="_blank">關於我們</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" target="_blank">人才招募</a>
+        </li>
+      </ul>
+      <ul class="nav">
+        <li class="nav-item">連絡電話：04-1234567</li>
+        <li class="nav-item">店家地址：台中市北屯區 安祥路八段光明街8787號</li>
+      </ul>
+      
 
-    </div>
+  </div>
     <!--最外層包裝 結尾-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
