@@ -40,7 +40,6 @@
 
 
     /*---- 內容區 ----*/
-    #CONTENT {}
 
     #CONTENT img {
       width: auto;
@@ -205,13 +204,20 @@
 
 <body>
   <!--頁首 -->
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light" >
     <a class="navbar-brand">啖蛋低卡養生廚房</a>
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </nav>
+
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      啖蛋低卡養生廚房
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">餐廳</a>
+      <a class="dropdown-item" href="#">菜單</a>
+      <a class="dropdown-item" href="#">團隊</a>
+    </div>
+  </div>
   <!--Headerlogo -->
   <div id="xxx" class="card" style="width: 30vh;">
     <img src="https://truth.bahamut.com.tw/s01/201201/64dfd91c48a340d5a41f476d9f7e0aec.JPG" class="card-img-top"
