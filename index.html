@@ -49,7 +49,7 @@
       display: block;
     }
 
-    #CONTENT h2,
+    
     #CONTENT h4,
     #CONTENT p {
       padding: 6px 20px 6px 20px;
@@ -60,11 +60,11 @@
       font-family: Arial;
       font-size: 24px;
       text-align: center;
-      padding-top: 10px;
       background-color: #606c38;
       color: #FFF;
       letter-spacing: 10px;
       border-top: 2px #e9edc9 solid;
+      padding: 6px 20px 6px 20px;
     }
 
     .align-content-center {
@@ -215,13 +215,7 @@
     <button id="hide">隱藏</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-    $("#hide").click(function () {
-    $("p").hide();
-    $("#hide").hide();
-});
 
-</script>
   <!--頁首 -->
   <nav class="navbar navbar-light bg-light" >
     <a class="navbar-brand">啖蛋低卡養生廚房</a>
@@ -299,9 +293,11 @@
     </div>
     <!--CONTENT內容區 -->
     <div id="CONTENT">
-      <h2 id="CONTENT">健康養生餐點</h2>
-      <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" height="500"
-        alt="菜單" /><br />
+      <div class="h2_img">
+        <h2 id="CONTENT">健康養生餐點</h2>
+        <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" 
+        alt="菜單" />
+      </div>
 
       <section class="d-flex flex-column align-items-center">
         <h1>
@@ -446,6 +442,13 @@
       </div>
 
     </div>
+    <script>
+      $("#hide").click(function () {
+      $(".remind p").hide();
+      $("#hide").hide();
+  });
+  
+    </script>
     <!--最外層包裝 結尾-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
