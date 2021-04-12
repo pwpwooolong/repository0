@@ -70,7 +70,12 @@
     .align-content-center {
       margin: 0 10px 100px 10px;
     }
-
+    .choose{
+      background-color: #fff;
+    }
+    .choose li {
+      margin: 5px;
+    }
     /*---- 菜單 ----*/
     section {
       background-color:lightseagreen;
@@ -86,55 +91,7 @@
     section > img {
       margin: 0 0 50px 0;
     }
-    .card h3 {
-      margin: 10px 0px 0 20px;
-      color:mediumaquamarine;
-      background-color: rgb(255, 255, 255);
-      border-radius: 10px 10px 0px 0px;
-      font-weight: bold;
-    }
-
-    .card .p_grid {
-      display: flex;
-      justify-content: center;
-      height: 100%;
-    }
-
-    .card .words {
-      text-align: left;
-      width: 100%;
-      height: fit-content;
-      color: #FFFFFF;
-      font-weight: bold;
-    }
-
-    .card .words::first-letter {
-      color: greenyellow;
-      font-size: 20pt;
-      font-weight:bolder;
-    }
-
-    .card .words_sale {
-      text-align: left;
-      width: 80%;
-      height: fit-content;
-    }
-
-    .card .words_sale::first-letter {
-      color: #94c722;
-      font-size: 2em;
-    }
-
-    .card .money {
-      margin: 0px;
-      position: absolute;
-      right: -1px;
-      bottom: -1px;
-      width: fit-content;
-      background-color: rgb(211, 20, 20);
-      color: #fff;
-    }
-
+   
     /*---- 頁尾 ----*/
     #FOOTER {
       background-color: #000000;
@@ -172,40 +129,7 @@
       height: 200px;
     }
 
-    /*--餐點照片--*/
-    .pic1 {
-      background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/o33d07922a670f717d002703806ae4e8b-4620693218520375109-201027-0006-1603796253.jpg?crop=1xw:1xh;center,top&resize=480:*);
-      background-repeat: no-repeat;
-      background-size: 100%;
-    }
-
-    .pic2 {
-      background: url(https://angelala.tw/wp-content/uploads/2020/08/la4.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: bottom;
-    }
-
-    .pic3 {
-      background: url(https://img.nellydyu.tw/uploads/20200324203618_45.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: bottom;
-    }
-
-    .pic4 {
-      background: url(https://disk.sharelife.tw/gallery/54918-83302/6256200720372821.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .pic5 {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGvh4uKPBvb94f8HOU1PzneX9O_8bg7PTRw&usqp=CAU);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+   
   </style>
 </head>
 
@@ -303,6 +227,21 @@
     <div id="CONTENT">
       <div class="h2_img">
         <h2 id="CONTENT">健康養生餐點</h2>
+      <div class='choose'>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="./menu.html ">
+              菜單介紹
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="./地圖.html ">
+              店家位置
+            </a>
+          </li>
+           
+        </ul>
+      </div>
         <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" 
         alt="菜單" />
       </div>
