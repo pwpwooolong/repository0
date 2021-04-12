@@ -70,12 +70,20 @@
     .align-content-center {
       margin: 0 10px 100px 10px;
     }
-    .choose{
+    .choose {
+      position: relative;
       background-color: #fff;
     }
     .choose li {
       margin: 5px;
     }
+    .choose li a{
+      color: black;
+      
+    }
+    .choose li a:hover {
+  background-color: gold;
+}
     /*---- 菜單 ----*/
     section {
       background-color:lightseagreen;
@@ -227,7 +235,7 @@
     <div id="CONTENT">
       <div class="h2_img">
         <h2 id="CONTENT">健康養生餐點</h2>
-      <div class='choose'>
+      <nav class='choose'>
         <ul class="nav">
           <li class="nav-item">
             <a href="./menu.html ">
@@ -241,7 +249,7 @@
           </li>
            
         </ul>
-      </div>
+      </nav>
         <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" 
         alt="菜單" />
       </div>
