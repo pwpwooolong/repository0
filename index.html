@@ -210,11 +210,16 @@
 <body>
 <!-- 貼心提醒 -->
   <div class="remind">
-    <p>貼心提醒: <br>請小心電話詐騙。<br>近期有不明人士以「訂單有誤」的理由，要求消費者匯款至指定帳戶。<br>請消費者勿上當！！！</p>
+    <p class="hide">貼心提醒: <br>請小心電話詐騙。<br>近期有不明人士以「訂單有誤」的理由，要求消費者匯款至指定帳戶。<br>請消費者勿上當！！！</p>
 
     <button id="hide">隱藏</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $("#hide").click(function () {
+    $("p.hide").hide();
+    $("#hide").hide();
+});
 
   <!--頁首 -->
   <nav class="navbar navbar-light bg-light" >
@@ -303,56 +308,14 @@
         <h1>
           低卡健康菜單
         </h1>
-        <div class="card_grid d-flex flex-column flex-wrap justify-content-center align-content-center">
-          <div class="card pic1">
-            <h3>入口即化餐</h3>
-            <div class="p_grid">
-              <p class="words">
-                &emsp;牙，口不好菜要軟爛，可客製化製作。
-              </p>
-              <p class="money">$100</p>
-            </div>
-          </div>
-          <div class="card pic2">
-            <h3>將酒霍肉餐</h3>
-            <div class="p_grid">
-              <p class="words">
-                &emsp;霍，豆葉。漿酒霍肉指把酒肉視為水漿豆葉般。
-              </p>
-              <p class="money">$90</p>
-            </div>
-          </div>
-          <div class="card pic3">
-            <h3>巧奪天工餐</h3>
-            <div class="p_grid">
-              <p class="words">
-                &emsp;巧，精心巧手製作，皆用天然食材。
-              </p>
-              <p class="money">$90</p>
-            </div>
-          </div>
-          <div class="card pic4">
-            <h3>甘醇入味餐</h3>
-            <div class="p_grid">
-              <p class="words">
-                &emsp; 甘，眾人不遠千里，聞香而來</p>
-            </div>
-            <p class="money">$100</p>
-          </div>
-          <div class="card pic5">
-            <h3>膾炙人口餐</h3>
-            <div class="p_grid">
-              <p class="words">&emsp;膾，細切肉；炙，烤肉。膾炙皆為人所喜好</p>
-            </div>
-            <p class="money">$120</p>
-          </div>
-        </div>
-                             <!--第一種 -->
+
+     <!--第一種 -->
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
     <div class="card-header pic1" ></div>
     <div class="card-body">
       <h5 class="card-title">入口即化餐</h5>
       <p class="card-text">牙，口不好菜要軟爛，可客製化製作。</p>
+      <p class="money">$100</p>
     </div>
   </div>
   <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
@@ -360,6 +323,7 @@
     <div class="card-body">
       <h5 class="card-title">巧奪天工餐</h5>
       <p class="card-text">巧，精心巧手製作，皆用天然食材。</p>
+      <p class="money">$90</p>
     </div>
   </div>
   <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
@@ -367,6 +331,7 @@
     <div class="card-body">
       <h5 class="card-title">甘醇入味餐</h5>
       <p class="card-text">甘，眾人不遠千里，聞香而來</p>
+      <p class="money">$120</p>
     </div>
   </div>
   <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
@@ -374,36 +339,18 @@
     <div class="card-body">
       <h5 class="card-title">膾炙人口餐</h5>
       <p class="card-text">膾，細切肉；炙，烤肉。膾炙皆為人所喜好</p>
+      <p class="money">$100</p>
     </div>
   </div>
   <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
     <div class="card-header pic5">Header</div>
     <div class="card-body">
-      <h5 class="card-title">Warning card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <h5 class="card-title">餐霞飲液餐</h5>
+      <p class="card-text">修煉長生不老之術.</p>
+      <p class="money">$100</p>
     </div>
   </div>
-  <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">Info card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card bg-light mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">Light card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
-  <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-    <div class="card-header">Header</div>
-    <div class="card-body">
-      <h5 class="card-title">Dark card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-  </div>
+
                      <!--第一種 -->
       </section>
 
