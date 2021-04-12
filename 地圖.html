@@ -31,6 +31,11 @@
             align-items: center;
             font-family:'DFT_PP5';
         }
+        .content-img {
+            margin-right: 50px;
+        }
+
+       
         @font-face {
             font-family: 'DFT_PP5';
             src: url('../repository0/image/DFT_PP5(1).TTC') format("truetype"),
@@ -47,25 +52,25 @@
         <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
     </nav>
     <div class="content">
-        <div><img src="image/map.png" alt="地圖" /></div>
+        <div class="content-img"><img src="image/map.png" alt="地圖" /></div>
         <div>
             <ul>
             <li>連絡電話：04-12345678</li>
             <li>店家地址：台中市北屯區安祥路八段光明七巷8787號</li>
             </ul>
         
-        <form style="background:darkkhaki;">
-            <p style="color:brown;">顧客建議</p>
+        <form style="background:darkkhaki;border-radius: 5px;">
+            <p style="color:brown;margin: 10px; padding-top: 10px;text-align: center;font-weight: bold;">顧客建議</p>
             <div class="form-group" style="color: brown;">
-              <label for="exampleInputEmail1">電子信箱</label>
+              <label for="exampleInputEmail1" style="margin: 10px;">意見內容 (限30字)</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">謝謝你寶貴的意見.</small>
+              <small id="emailHelp" class="form-text text-muted" style="padding-left: 10px;">謝謝你寶貴的意見.</small>
             </div>
             <div class="form-group" style="color:brown;">
-              <label for="exampleInputPassword1">電話號碼</label>
+              <label for="exampleInputPassword1" style="margin: 10px;">電話號碼</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" style="margin:5px 10px 10px 10px;">Submit</button>
         </form>
         </div>
     </div>
