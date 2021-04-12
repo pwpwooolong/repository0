@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
@@ -27,7 +29,12 @@
             flex-direction:row;
             justify-content: center;
             align-items: center;
+            font-family:'DFT_PP5';
         }
+        @font-face {
+            font-family: 'DFT_PP5';
+            src: url('../repository0/image/DFT_PP5(1).TTC') format("truetype"),
+            }
 
     </style>
 
@@ -37,7 +44,7 @@
 
     <nav class="navbar navbar-light bg-light" >
         <a class="navbar-brand">啖蛋低卡養生廚房</a>
-        <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
+        <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/">回首頁</a>
       </nav>
     <div class="content">
         <div><img src="image/map.png" alt="地圖" /></div>
@@ -46,6 +53,20 @@
             <li>連絡電話：04-12345678</li>
             <li>店家地址：台中市北屯區安祥路八段光明七巷8787號</li>
             </ul>
+        
+        <form style="background:darkkhaki;">
+            <p style="color:brown;">顧客建議</p>
+            <div class="form-group" style="color: brown;">
+              <label for="exampleInputEmail1">電子信箱</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">謝謝你寶貴的意見.</small>
+            </div>
+            <div class="form-group" style="color:brown;">
+              <label for="exampleInputPassword1">電話號碼</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
