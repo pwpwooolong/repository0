@@ -209,14 +209,14 @@
 <body>
 <!-- 貼心提醒 -->
   <div class="remind">
-    <p>貼心提醒: <br>請小心電話詐騙。<br>近期有不明人士以「訂單有誤」的理由，要求消費者匯款至指定帳戶。<br>請消費者勿上當！！！</p>
+    <p class="hide">貼心提醒: <br>請小心電話詐騙。<br>近期有不明人士以「訂單有誤」的理由，要求消費者匯款至指定帳戶。<br>請消費者勿上當！！！</p>
 
     <button id="hide">隱藏</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script>
     $("#hide").click(function () {
-    $("p").hide();
+    $("p.hide").hide();
     $("#hide").hide();
 });
 
@@ -350,7 +350,7 @@
             <p class="money">$120</p>
           </div>
         </div>
-                             <!--第一種 -->
+     <!--第一種 -->
   <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
     <div class="card-header pic1" ></div>
     <div class="card-body">
