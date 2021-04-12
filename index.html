@@ -13,12 +13,17 @@
     crossorigin="anonymous" />
   <style>
     body {
-      font-family: "Lato", "Noto Sans TC", sans-serif;
+      font-family: 'jf-openhuninn-1.1';
       margin: 0;
       padding: 0;
       color: #333333;
       background-color: #F4CD83;
     }
+
+    @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
+            }
 
     #WRAPPER {
       width: 800px;
@@ -154,28 +159,18 @@
     <button id="hide">隱藏</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-    $("#hide").click(function () {
-    $("p.hide").hide();
-    $("#hide").hide();
-});
-</script>
+    <script>
+        $("#hide").click(function () {
+        $("p.hide").hide();
+        $("#hide").hide();
+    });
+    </script>
   <!--頁首 -->
   <nav class="navbar navbar-light bg-light" >
     <a class="navbar-brand">啖蛋低卡養生廚房</a>
     <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
   </nav>
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      啖蛋低卡養生廚房
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">餐廳</a>
-      <a class="dropdown-item" href="#">菜單</a>
-      <a class="dropdown-item" href="#">團隊</a>
-    </div>
-  </div>
   <!--Headerlogo -->
   <div id="xxx" class="card" style="width: 30vh;">
     <img src="https://truth.bahamut.com.tw/s01/201201/64dfd91c48a340d5a41f476d9f7e0aec.JPG" class="card-img-top"
