@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <style>
+         /*---- 菜單 ----*/
+    section {
+      background-color:lightseagreen;
+    }
+
+    section>h1 {
+      color: white;
+      text-shadow: 5px 5px 5px rgb(184, 218, 36);
+      width: fit-content;
+      border-radius: 5px;
+      margin: 30px;
+    }
+
+    .card h3 {
+      margin: 10px 0px 0 20px;
+      color:mediumaquamarine;
+      background-color: rgb(255, 255, 255);
+      border-radius: 10px 10px 0px 0px;
+      font-weight: bold;
+    }
+
+    .card .p_grid {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .card .words {
+      text-align: left;
+      width: 100%;
+      height: fit-content;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    .card .words::first-letter {
+      color: greenyellow;
+      font-size: 20pt;
+      font-weight:bolder;
+    }
+
+    .card .words_sale {
+      text-align: left;
+      width: 80%;
+      height: fit-content;
+    }
+
+    .card .words_sale::first-letter {
+      color: #94c722;
+      font-size: 2em;
+    }
+
+    .card .money {
+      margin: 0px;
+      position: absolute;
+      right: -1px;
+      bottom: -1px;
+      width: fit-content;
+      background-color: rgb(211, 20, 20);
+      color: #fff;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+        <div class="card-header pic1" ></div>
+        <div class="card-body">
+          <h5 class="card-title">入口即化餐</h5>
+          <p class="card-text">牙，口不好菜要軟爛，可客製化製作。</p>
+          <p class="money">$100</p>
+        </div>
+      </div>
+      <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+        <div class="card-header pic2"></div>
+        <div class="card-body">
+          <h5 class="card-title">巧奪天工餐</h5>
+          <p class="card-text">巧，精心巧手製作，皆用天然食材。</p>
+          <p class="money">$90</p>
+        </div>
+      </div>
+      <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+        <div class="card-header pic3">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">甘醇入味餐</h5>
+          <p class="card-text">甘，眾人不遠千里，聞香而來</p>
+          <p class="money">$120</p>
+        </div>
+      </div>
+      <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+        <div class="card-header pic4">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">膾炙人口餐</h5>
+          <p class="card-text">膾，細切肉；炙，烤肉。膾炙皆為人所喜好</p>
+          <p class="money">$100</p>
+        </div>
+      </div>
+      <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+        <div class="card-header pic5">Header</div>
+        <div class="card-body">
+          <h5 class="card-title">餐霞飲液餐</h5>
+          <p class="card-text">修煉長生不老之術.</p>
+          <p class="money">$100</p>
+        </div>
+      </div>
+     
+</body>
+</html>
