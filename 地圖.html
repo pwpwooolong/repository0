@@ -16,6 +16,10 @@
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <script src="jquery.elevatezoom.min.js"></script>
     <style>
+        @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
+            }
         body {
             margin: 0px;
             font-family: 'Noto Serif TC', serif;
@@ -34,10 +38,13 @@
             margin-right: 50px;
         }
 
-        @font-face {
-            font-family:'jf-openhuninn-1.1';
-            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
-            }
+        .title{
+        background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 
     </style>
 
@@ -46,7 +53,7 @@
 <body>
 
     <nav class="navbar navbar-light bg-light" >
-    <a class="navbar-brand" href="index.html"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
+    <a class="navbar-brand, title" href="index.html" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
         <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
     </nav>
     <div class="content">
