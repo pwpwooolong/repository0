@@ -49,7 +49,7 @@
       display: block;
     }
 
-    #CONTENT h2,
+    
     #CONTENT h4,
     #CONTENT p {
       padding: 6px 20px 6px 20px;
@@ -60,11 +60,11 @@
       font-family: Arial;
       font-size: 24px;
       text-align: center;
-      padding-top: 10px;
       background-color: #606c38;
       color: #FFF;
       letter-spacing: 10px;
       border-top: 2px #e9edc9 solid;
+      padding: 6px 20px 6px 20px;
     }
 
     .align-content-center {
@@ -139,8 +139,9 @@
       padding: 30px 0 60px 0;
     }
 
-    #FOOTER ul {
+    #FOOTER.nav-1, #FOOTER.nav-2 {
       text-align: center;
+      margin: 25px 0 20px;
 
     }
 
@@ -153,7 +154,7 @@
 
     #FOOTER ul li a {
       margin: 0 15px 0 0;
-      color: #fff
+      color: #fff;
     }
 
 
@@ -219,7 +220,6 @@
     $("p.hide").hide();
     $("#hide").hide();
 });
-
 </script>
   <!--頁首 -->
   <nav class="navbar navbar-light bg-light" >
@@ -299,9 +299,11 @@
     </div>
     <!--CONTENT內容區 -->
     <div id="CONTENT">
-      <h2 id="CONTENT">健康養生餐點</h2>
-      <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" height="500"
-        alt="菜單" /><br />
+      <div class="h2_img">
+        <h2 id="CONTENT">健康養生餐點</h2>
+        <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" 
+        alt="菜單" />
+      </div>
 
       <section class="d-flex flex-column align-items-center">
         <h1>
@@ -358,38 +360,37 @@
     <div id="FOOTER">
 
       <!--聯絡方式-->
-      <ul class="nav">
-        <li class="nav-item">
-          <a href="#" target="_blank">關於我們</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" target="_blank">人才招募</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" target="_blank">
-            <i class="fab fa-facebook-square"></i> FACEBOOK</a>
-        </li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item">連絡電話：04-12345678</li>
-        <li class="nav-item">店家地址：台中市北屯區 安祥路八段光明七巷8787號</li>
-      </ul>
-      <form>
-        <p style="color: rgb(255, 255, 255);">顧客建議</p>
-        <div class="form-group" style="color: rgb(255, 255, 255);">
-          <label for="exampleInputEmail1">電子信箱</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">謝謝你寶貴的意見.</small>
-        </div>
-        <div class="form-group" style="color: rgb(255, 255, 255);">
-          <label for="exampleInputPassword1">電話號碼</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
-        </div>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+      <div class="nav-1">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" target="_blank">
+              <i class="fab fa-facebook-square"></i> FACEBOOK</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" target="_blank">
+              <i class="fab fa-youtube"></i> Youtube頻道</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" target="_blank">
+              <i class="fab fa-twitter"></i> Twitter</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" target="_blank">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" target="_blank">人才招募</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav-2">
+          <ul class="nav">
+            <li class="nav-item">連絡電話：04-12345678</li>
+            <li class="nav-item">店家地址：台中市北屯區 安祥路八段光明七巷8787號</li>
+          </ul>
+      </div>
 
     </div>
+    
     <!--最外層包裝 結尾-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
