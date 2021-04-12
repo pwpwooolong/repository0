@@ -7,47 +7,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
     <style>
+
          /*---- 菜單 ----*/
-         /*--餐點照片--*/
-    .pic1 {
-      background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/o33d07922a670f717d002703806ae4e8b-4620693218520375109-201027-0006-1603796253.jpg?crop=1xw:1xh;center,top&resize=480:*);
+    body {
+      background-color: #e5e5e5;
+      background-image: url(./image/egg.jpeg);
+      background-size: contain;
       background-repeat: no-repeat;
-      background-size: 100%;
+      background-position: right 0 bottom 0;
+      background-attachment: fixed;
     }
-
-    .pic2 {
-      background: url(https://angelala.tw/wp-content/uploads/2020/08/la4.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: bottom;
-    }
-
-    .pic3 {
-      background: url(https://img.nellydyu.tw/uploads/20200324203618_45.jpg);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: bottom;
-    }
-
-    .pic4 {
-      background: url(https://disk.sharelife.tw/gallery/54918-83302/6256200720372821.jpg);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .pic5 {
-      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGvh4uKPBvb94f8HOU1PzneX9O_8bg7PTRw&usqp=CAU);
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: center;
+    .container {
+      
+      margin: 100px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: stretch;
+     
     }
    
-
+  
+    /* 菜單 */
     .card h3 {
       margin: 10px 0px 0 20px;
       color:mediumaquamarine;
@@ -55,13 +41,11 @@
       border-radius: 10px 10px 0px 0px;
       font-weight: bold;
     }
-
-    .card .p_grid {
-      display: flex;
-      justify-content: center;
-      height: 100%;
+    .card text-white bg-secondary mb-3 {
+      padding: 10px;
     }
-
+    
+    card-body
     .card .words {
       text-align: left;
       width: 100%;
@@ -96,50 +80,105 @@
       background-color: rgb(211, 20, 20);
       color: #fff;
     }
+  /*--餐點照片--*/
+  .pic1 {
+      background: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/o33d07922a670f717d002703806ae4e8b-4620693218520375109-201027-0006-1603796253.jpg?crop=1xw:1xh;center,top&resize=480:*);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      
+    }
+  span {
+   background-color: #000;
+ }
+    .pic2 {
+      background: url(https://angelala.tw/wp-content/uploads/2020/08/la4.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
 
+    .pic3 {
+      background: url(https://img.nellydyu.tw/uploads/20200324203618_45.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+    }
+
+    .pic4 {
+      background: url(https://disk.sharelife.tw/gallery/54918-83302/6256200720372821.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .pic5 {
+      background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYGvh4uKPBvb94f8HOU1PzneX9O_8bg7PTRw&usqp=CAU);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+   
     </style>
 </head>
 <body>
+
+  
+  <nav class="navbar navbar-light bg-light" >
+    <a class="navbar-brand" href="index.html"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
+    <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
+  </nav>
+  <!-- 菜單 -->
+  <div class="container">
     <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-        <div class="card-header pic1" ></div>
+        <div class="card-header pic1" ><span>入口即化餐</span></div>
         <div class="card-body">
-          <h5 class="card-title">入口即化餐</h5>
+          <h5 class="card-title"></h5>
           <p class="card-text">牙，口不好菜要軟爛，可客製化製作。</p>
           <p class="money">$100</p>
         </div>
       </div>
       <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-        <div class="card-header pic2"></div>
+        <div class="card-header pic2"><span>巧奪天工餐</span></div>
         <div class="card-body">
-          <h5 class="card-title">巧奪天工餐</h5>
+          <h5 class="card-title"></h5>
           <p class="card-text">巧，精心巧手製作，皆用天然食材。</p>
           <p class="money">$90</p>
         </div>
       </div>
       <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-        <div class="card-header pic3">Header</div>
+        <div class="card-header pic3"><span>甘醇入味餐</span></div>
         <div class="card-body">
-          <h5 class="card-title">甘醇入味餐</h5>
-          <p class="card-text">甘，眾人不遠千里，聞香而來</p>
+          <h5 class="card-title"></h5>
+          <p class="card-text">甘，眾人不遠千里，聞香而來，只為吃上這一口。</p>
           <p class="money">$120</p>
         </div>
       </div>
       <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
-        <div class="card-header pic4">Header</div>
+        <div class="card-header pic4"><span>膾炙人口餐</span></div>
         <div class="card-body">
-          <h5 class="card-title">膾炙人口餐</h5>
-          <p class="card-text">膾，細切肉；炙，烤肉。膾炙皆為人所喜好</p>
+          <h5 class="card-title"></h5>
+          <p class="card-text">膾，細切肉；炙，烤肉。膾炙皆為人所喜好。</p>
           <p class="money">$100</p>
         </div>
       </div>
       <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-        <div class="card-header pic5">Header</div>
+        <div class="card-header pic5"><span>餐霞飲液餐</span></div>
         <div class="card-body">
-          <h5 class="card-title">餐霞飲液餐</h5>
-          <p class="card-text">修煉長生不老之術.</p>
+          <h5 class="card-title"></h5>
+          <p class="card-text">滿滿中藥在裡頭，讓你青春永駐，修煉長生不老之術就靠這碗。</p>
           <p class="money">$100</p>
         </div>
       </div>
-     
+  </div> 
+   <!--最外層包裝 結尾-->
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+   crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+   integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+   crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+   integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+   crossorigin="anonymous"></script>
 </body>
 </html>
