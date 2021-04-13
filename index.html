@@ -13,9 +13,79 @@
     crossorigin="anonymous" />
   <style>
     @font-face {
-            font-family:'jf-openhuninn-1.1';
-            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype");
-            }
+      font-family: 'jf-openhuninn-1.1';
+      src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype");
+    }
+
+    @-webkit-keyframes color-change {
+      0% {
+        color: red;
+      }
+
+      50% {
+        color: orange;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    @-moz-keyframes color-change {
+      0% {
+        color: red;
+      }
+
+      50% {
+        color: orange;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    @-ms-keyframes color-change {
+      0% {
+        color: red;
+      }
+
+      50% {
+        color: orange;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    @-o-keyframes color-change {
+      0% {
+        color: red;
+      }
+
+      50% {
+        color: orange;
+      }
+
+      100% {
+        color: white;
+      }
+    }
+
+    @keyframes color-change {
+      0% {
+        color: red;
+      }
+
+      50% {
+        color: orange;
+      }
+
+      100% {
+        color: white;
+      }
+    }
 
     body {
       font-family: 'jf-openhuninn-1.1';
@@ -39,8 +109,9 @@
     .remind {
       background-color: #FFF;
       padding: 30px 30px 0 30px;
-      
+
     }
+
     /*---- 頁首 ----*/
     #HEADER {
       background-color: #FFFFFF;
@@ -52,20 +123,24 @@
       width: 800px;
       height: 200px;
     }
-    .carousel-item img{
+
+    .carousel-item img {
       margin: 0 0 10px 0;
     }
 
-    .title{
-        background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
-        background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+    .title {
+      background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+      background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      font-family: 'jf-openhuninn-1.1';
     }
+
     .navbar navbar-light bg-light {
       position: fixed;
     }
+
     /*---- 內容區 ----*/
 
     #CONTENT img {
@@ -95,23 +170,34 @@
     .align-content-center {
       margin: 0 10px 100px 10px;
     }
+
     .choose {
       position: relative;
       background-color: #fff;
     }
+
     .choose li {
       margin: 5px;
     }
-    .choose li a{
+
+    .choose li a {
       color: black;
-      
+
     }
+
     .choose li a:hover {
-  background-color: gold;
-}
+      background-color: gold;
+    }
+    .color_change {
+        -webkit-animation: color-change 1s infinite;
+        -moz-animation: color-change 1s infinite;
+        -o-animation: color-change 1s infinite;
+        -ms-animation: color-change 1s infinite;
+        animation: color-change 1s infinite;
+    }
     /*---- 菜單 ----*/
     section {
-      background-color:lightseagreen;
+      background-color: lightseagreen;
     }
 
     section>h1 {
@@ -121,17 +207,19 @@
       border-radius: 5px;
       margin: 30px;
     }
-    section > img {
+
+    section>img {
       margin: 0 0 50px 0;
     }
-   
+
     /*---- 頁尾 ----*/
     #FOOTER {
       background-color: #000000;
       padding: 30px 0 60px 0;
     }
 
-    #FOOTER.nav-1, #FOOTER.nav-2 {
+    #FOOTER.nav-1,
+    #FOOTER.nav-2 {
       text-align: center;
       margin: 25px 0 20px;
 
@@ -159,27 +247,28 @@
     .carousel-item {
       height: 200px;
     }
-
   </style>
 </head>
 
 <body>
-<!-- 貼心提醒 -->
+  <!-- 貼心提醒 -->
   <div class="remind">
     <p class="hide">貼心提醒: <br>請小心電話詐騙。<br>近期有不明人士以「訂單有誤」的理由，要求消費者匯款至指定帳戶。<br>請消費者勿上當！！！</p>
 
     <button id="hide">隱藏</button>
   </div>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script>
-        $("#hide").click(function () {
-        $("p.hide").hide();
-        $("#hide").hide();
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $("#hide").click(function () {
+      $("p.hide").hide();
+      $("#hide").hide();
     });
-    </script>
+  </script>
   <!--頁首 -->
-  <nav class="navbar navbar-light bg-light" >
-    <a class="navbar-brand, title" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand, title" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span
+        class="fas fa-egg"></span></a>
     <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
   </nav>
 
@@ -188,7 +277,7 @@
     <img src="https://truth.bahamut.com.tw/s01/201201/64dfd91c48a340d5a41f476d9f7e0aec.JPG" class="card-img-top"
       alt="...">
     <div class="card-body">
-      <h5 class="card-title"><i class="fas fa-egg"></i>限時優惠<span class="fas fa-egg"></span></h5>
+      <h5 class="card-title color_change"><i class="fas fa-egg color_change"></i>限時優惠<span class="fas fa-egg"></span></h5>
       <p class="card-text">消費滿200元 送養生冬瓜茶一瓶</p>
     </div>
   </div>
@@ -205,8 +294,7 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/000/416/884/original/vegetables-vector.jpg"
+            <img src="https://static.vecteezy.com/system/resources/previews/000/416/884/original/vegetables-vector.jpg"
               class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: black;font-weight:bold; background-color:#fff;width:200px;">啖蛋低卡養生廚房</h5>
@@ -214,9 +302,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img
-              src="image/低卡蛋白不怕胖.png"
-              class="d-block w-100" alt="..." style="height: inherit;">
+            <img src="image/低卡蛋白不怕胖.png" class="d-block w-100" alt="..." style="height: inherit;">
             <div class="carousel-caption d-none d-md-block">
               <h5></h5>
               <p></p>
@@ -247,23 +333,22 @@
     <div id="CONTENT">
       <div class="h2_img">
         <h2 id="CONTENT">健康養生餐點</h2>
-      <nav class='choose'>
-        <ul class="nav">
-          <li class="nav-item">
-            <a  href="./menu.html ">
-              <div style="text-align:center;background-color:pink;width:380px;height:60">菜單介紹</div>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="./地圖.html ">
-              <div style="text-align:center;background-color:pink;width:380px;height:60">餐廳位置</div>
-            </a>
-          </li>
-           
-        </ul>
-      </nav>
-        <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" 
-        alt="菜單" />
+        <nav class='choose'>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="./menu.html ">
+                <div style="text-align:center;background-color:pink;width:380px;height:60">菜單介紹</div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="./地圖.html ">
+                <div style="text-align:center;background-color:pink;width:380px;height:60">餐廳位置</div>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <img src="https://ucarecdn.com/cd1979ed-3d51-485f-bcec-c8d94f3848ac/-/crop/4280x2977/0,3/-/preview/" alt="菜單" />
       </div>
 
       <section class="d-flex flex-column align-items-center">
@@ -301,9 +386,9 @@
           </li>
         </ul>
       </div>
-      
+
     </div>
-    
+
     <!--最外層包裝 結尾-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
