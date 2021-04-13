@@ -11,7 +11,10 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
     <style>
-
+    @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
+            }
          /*---- 菜單 ----*/
     body {
       background-color: #e5e5e5;
@@ -20,6 +23,7 @@
       background-repeat: no-repeat;
       background-position: right 0 bottom 0;
       background-attachment: fixed;
+      font-family:'jf-openhuninn-1.1';
     }
     .container {
       
@@ -34,12 +38,19 @@
    /*hearder  */
    .header{
      margin: 50px 0 0 0;
-     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-family:'jf-openhuninn-1.1';
      width: 500px;
      text-align: center;
    }
    .header h2:hover, .header p:hover{
-      background-color: #fff;: #fff;
+      background-color: #fff;
+    }
+    .title{
+        background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
     }
     /* 菜單 */
     .card h3 {
@@ -134,7 +145,7 @@
 
   <!-- nav -->
   <nav class="navbar navbar-light bg-light" >
-    <a class="navbar-brand" href="index.html"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
+    <a class="navbar-brand, title" href="index.html" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
     <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
   </nav>
   <!-- header -->
@@ -180,7 +191,7 @@
         <div class="card-header pic5"><span>餐霞飲液餐</span></div>
         <div class="card-body">
           <h5 class="card-title"></h5>
-          <p class="card-text" style="color: #000;">滿滿中藥在裡頭，讓你青春永駐，修煉長生不老之術就靠這碗。</p>
+          <p class="card-text" style="color: #000;">滿滿中藥讓你青春永駐，修煉長生不老之術就靠這碗。</p>
           <p class="money">$100</p>
         </div>
       </div>

@@ -12,8 +12,13 @@
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
   <style>
+    @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
+            }
+
     body {
-      font-family: "Lato", "Noto Sans TC", sans-serif;
+      font-family: 'jf-openhuninn-1.1';
       margin: 0;
       padding: 0;
       color: #333333;
@@ -46,6 +51,14 @@
       margin: 0 0 10px 0;
     }
 
+    .title{
+        background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
     /*---- 內容區 ----*/
 
     #CONTENT img {
@@ -55,7 +68,6 @@
       display: block;
     }
 
-    
     #CONTENT h4,
     #CONTENT p {
       padding: 6px 20px 6px 20px;
@@ -131,8 +143,6 @@
     }
 
 
-
-
     /*---- 佛郎基 ----*/
     #xxx {
       position: fixed;
@@ -154,34 +164,24 @@
     <button id="hide">隱藏</button>
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-    $("#hide").click(function () {
-    $("p.hide").hide();
-    $("#hide").hide();
-});
-</script>
+    <script>
+        $("#hide").click(function () {
+        $("p.hide").hide();
+        $("#hide").hide();
+    });
+    </script>
   <!--頁首 -->
   <nav class="navbar navbar-light bg-light" >
-    <a class="navbar-brand">啖蛋低卡養生廚房</a>
+    <a class="navbar-brand, title" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
     <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
   </nav>
 
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      啖蛋低卡養生廚房
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <a class="dropdown-item" href="#">餐廳</a>
-      <a class="dropdown-item" href="#">菜單</a>
-      <a class="dropdown-item" href="#">團隊</a>
-    </div>
-  </div>
   <!--Headerlogo -->
   <div id="xxx" class="card" style="width: 30vh;">
     <img src="https://truth.bahamut.com.tw/s01/201201/64dfd91c48a340d5a41f476d9f7e0aec.JPG" class="card-img-top"
       alt="...">
     <div class="card-body">
-      <h5 class="card-title">限時優惠</h5>
+      <h5 class="card-title"><i class="fas fa-egg"></i>限時優惠<span class="fas fa-egg"></span></h5>
       <p class="card-text">消費滿200元 送養生冬瓜茶一瓶</p>
     </div>
   </div>
@@ -199,7 +199,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="https://ichef.bbci.co.uk/news/640/cpsprodpb/F957/production/_94813836_f72ad695-7e7f-4fe8-836a-cf67879878b8.jpg"
+              src="https://static.vecteezy.com/system/resources/previews/000/416/884/original/vegetables-vector.jpg"
               class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5 style="color: black;font-weight:bold; background-color:#fff;width:200px;">啖蛋低卡養生廚房</h5>

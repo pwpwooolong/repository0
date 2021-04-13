@@ -11,35 +11,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
     <script src="jquery.elevatezoom.min.js"></script>
     <style>
+        @font-face {
+            font-family:'jf-openhuninn-1.1';
+            src: url('../repository0/image/jf-openhuninn-1.1.woff') format("truetype"),
+            }
         body {
             margin: 0px;
             font-family: 'Noto Serif TC', serif;
             max-width: 100vw;
             background: wheat;
+            font-family:'jf-openhuninn-1.1';
         }
         .content{
             display:flex;
             flex-direction:row;
             justify-content: center;
             align-items: center;
-            font-family:'DFT_PP5';
+            font-family:'jf-openhuninn-1.1';
         }
         .content-img {
             margin-right: 50px;
         }
 
-       
-        @font-face {
-            font-family: 'DFT_PP5';
-            src: url('../repository0/image/DFT_PP5(1).TTC') format("truetype"),
-            }
+        .title{
+        background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
 
     </style>
 
@@ -48,7 +53,7 @@
 <body>
 
     <nav class="navbar navbar-light bg-light" >
-    <a class="navbar-brand" href="index.html"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
+    <a class="navbar-brand, title" href="index.html" style="font-size: 30pt;"><i class="fas fa-egg"></i> 啖蛋低卡養生廚房 <span class="fas fa-egg"></span></a>
         <a class="navbar-brand" href="https://pwpwooolong.github.io/repository0/%E5%9C%B0%E5%9C%96.html">聯繫我們</a>
     </nav>
     <div class="content">
